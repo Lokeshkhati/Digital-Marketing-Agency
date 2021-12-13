@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 body {
@@ -13,31 +13,27 @@ body {
 
 .top-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
-    width: 100vw;
+
 }
 
 
 .top-section img {
-    max-width: 500px;
-    max-height: 500px;
-    width: 100%px;
-    /* margin: auto; */
-    /* top: 100px;
-    left: 1045px; */
+    max-width: 550px;
+    max-height: 550px;
+    width: 100%;
+    height: 100%;
 }
 
 .content-box {
     margin: auto;
+    width: 45%;
 }
 
 .content-box h3 {
-    /* left: 376px;
-    width: 251px; */
-    text-align: left;
     color: #FF3147;
     text-transform: uppercase;
     margin-bottom: 1.4rem;
@@ -46,32 +42,30 @@ body {
 
 .content-box h1 {
     text-transform: uppercase;
-    font-family: con;
-    font-size: 2rem;
+    font-size: 2.8rem;
+    font-weight: bold;
     margin-bottom: 2.3rem;
     font-family: sans-serif;
 }
 
 .content-box p {
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: .88rem;
     letter-spacing: 2px;
     line-height: 1.5rem;
 }
 
 .btn button {
-    padding: 1rem 2.4rem;
+    padding: .8rem 1.7rem;
     background-color: #FF3147;
     color: #FFFFFF;
     border: none;
     cursor: pointer;
     font-family: sans-serif;
-    font-size: 16px;
-    border-radius: 6px;
+    font-size: .7rem;
+    border-radius:.2rem;
     margin-top: 3rem;
 }
-
-
-/*Contact us*/
 
 .wrapper h1 {
     margin-left: 2rem;
@@ -233,40 +227,37 @@ label {
 }
 
 
-/*-------------------------*/
 
 .container {
     background: #FAFAFA;
-    /* padding-top: 4rem; */
-    /* height: 100vh; */
+    padding-top: 4rem;
+    height: 100vh;
 }
 
-.heading h3 {
+.heading{
     color: #FF3147;
     text-transform: uppercase;
     font-family: sans-serif;
+    text-align: left;
 }
 
 .text-wrapper {
     display: flex;
-    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    width: 90%;
 }
 
-.heading-bold h1 {
+.text-wrapper h1 {
+    font-size: 2rem;
+    font-weight: bold;
     text-transform: uppercase;
-    /* margin-top: 2rem; */
 }
-
-.main-text {
-    /* margin-left: 10rem; */
+.text-wrapper p{
+    font-weight: bold;
+    font-size: 1.2rem;
 }
-
-.main-text p {
-    /* margin-top: 3rem; */
-    font-family: sans-serif;
-    font-size: 17px;
-}
-
 .card-body {
     display: flex;
     flex-wrap: wrap;
@@ -307,11 +298,6 @@ label {
     opacity: 1;
     cursor: pointer;
 }
-
-/* .text-wrapper,
-.heading {
-    margin-left: 200px;
-} */
 
 .hidden-content {
     background: #FF3147;
@@ -370,8 +356,7 @@ label {
     width: 40px;
     height: 10px;
     margin-left: 10px;
-}
-
+}/*  
 .slider-dots {
     display: flex;
     align-items: center;
@@ -395,12 +380,13 @@ label {
 }
 
 
-/*CHOOSE US SECTION*/
+CHOOSE US SECTION
 
 .container-choose-us {
     width: 100%;
     background: #fff;
     padding-top: 5rem;
+    height: 100vh;
 }
 
 .choose-us-wrapper {
@@ -454,12 +440,13 @@ label {
 }
 
 
-/*Our project*/
+
 
 .project-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .our-project {
@@ -529,7 +516,7 @@ label {
 }
 
 
-/* Company growth*/
+Company growth
 
 .company-growth-container {
     width: 100%;
@@ -561,6 +548,7 @@ label {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .company-growth-row .growth-card-1,
@@ -614,7 +602,7 @@ label {
 }
 
 
-/*Feedback*/
+Feedback
 
 .feedback-container {
     height: 230px;
@@ -671,10 +659,7 @@ label {
 
 .feedback-author p {
     color: #ccc;
-}
 
-
-/*footer*/
 
 .footer-section {
     height: 200px;
@@ -703,4 +688,29 @@ label {
 .slick-list {
     margin: 0 27px;
     ;
-}
+}*/
+@media (max-width:425px) {
+    .top-section img{
+        display: none;
+    }
+    .content-box {
+        margin: auto;
+        width: 100%;
+    }
+    .content-box h3 {
+        font-size: 1.2rem
+    }
+    
+    .content-box h1 {
+        font-size: 1.5rem;    
+    }
+    .content-box p {
+        text-align: left;
+        font-size: .88rem;
+        margin-left: 2rem;
+        
+    }
+    .top-section{
+        text-align: center;
+    }
+} 
